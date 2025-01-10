@@ -5,7 +5,7 @@ import { lusitana } from "@/app/ui/fonts";
 import { LatestInvoice } from "@/app/lib/definitions";
 import { fetchLatestInvoices } from "@/app/lib/data";
 export default async function LatestInvoices() {
-  // await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 2000));
   const latestInvoices = await fetchLatestInvoices();
   
   return (
